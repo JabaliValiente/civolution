@@ -26,11 +26,24 @@ digraph A {
     "Systeme Digestif"->Herbivore;
     Systeme->"Systeme Respiratoire"->Branchie;
     Systeme->"Systeme nerveux"->Cerveau;
+    Systeme->Ouie;
+    Systeme->Vision;
+    Systeme->"Perception E-M";
+    Systeme->Sonar;
 
     autres2[label="Autres"];
     autres2->Croc;
     autres2->Cornes;
     autres2->Griffes;
     autres2->Communication;
+  }
+
+  subgraph cluster_level3 {
+  comm[label="Communication"];
+  comm->Verbale;
+  comm->Gestuelle;
+  comm->Danse;
+  comm->telepathie;
+  comm->pheromones;
   }
 }
