@@ -2,6 +2,10 @@ digraph A {
 
   subgraph cluster_level1 {
     label="Level 1";
+    "Matiere Constituante"->Carbon;
+    "Matiere Constituante"->Iron;
+    "Matiere Constituante"->Azote;
+
     Nutrition->Thermal;
     Nutrition->Photosynthese;
 
@@ -14,6 +18,8 @@ digraph A {
     Autres->"Resistance Froid";
     Autres->"Resistance Chaud";
     Autres->Pheromones;
+    Autres->Symbiosis;
+    Autres->"Anti-Symbiosis";
   }
 
   subgraph cluster_level2 {
