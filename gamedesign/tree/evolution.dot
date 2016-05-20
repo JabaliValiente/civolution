@@ -9,7 +9,8 @@ digraph A {
     Nutrition->Thermal;
     Nutrition->Photosynthese;
 
-    Reproduction->Sexuelle;
+    Reproduction->Sexuelle->Gestation;
+    Sexuelle->Oeufs;
     Reproduction->Mitose;
     Reproduction->Spore;
 
